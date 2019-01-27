@@ -105,7 +105,6 @@ class Game {
 	   *side 4 = BOTTOM
 	*/
 	var side = Math.floor(getRandom(1,4));
-	console.log(side, Math.floor(getRandom(1,4)));
 	if(side == 1) {
         	this.powerBalls.push(new PowerBall(0, getRandom(this.canvas.height), this.ctx, this.canvas));
 	} else if(side == 2) {

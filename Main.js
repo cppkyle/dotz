@@ -8,7 +8,7 @@ this.init();
 function init() {
     window.addEventListener('resize', resizeCanvas, false);
     window.addEventListener('pointerdown', mouseClicked, false);
-    this.sounds = [new Audio('click1.mp3'),new Audio('wrong.mp3'),new Audio('Ice.mp3'), new Audio('Double.mp3')];
+    this.sounds = [new Audio('./click1.mp3'),new Audio('./wrong.mp3'),new Audio('./Ice.mp3'), new Audio('./Double.mp3')];
     this.score = localStorage.getItem('score');
     if (this.score === null) {
        this.score = 0;

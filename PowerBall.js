@@ -70,7 +70,7 @@ class PowerBall {
 	game.slowMoStart = Date.now();
 	game.speed = 1;
 	for (var i = 0; i < game.balls.length; i++) {
-				game.balls[i].speed = 2;
+				game.balls[i].speed = 1;
 	}
 	break;
       case "double":

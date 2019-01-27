@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballz</title>
+    <style> 
+		html, body {
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+			border: 0;
+			overflow: hidden;
+			display: block;
+		}
+	</style>
+  </head>
+  <body>
+	<canvas id='canvas' style='position:absolute; left:0px; top:0px;'></canvas>
+	
+	<script>
+	function getRandom(min, max) {
+		if (max == null) {
+			max = min;
+			min = 0;
+		}
+		return Math.random() * (max - min) + min;
+	}
+	</script>
+	
+	<script src="Ball.js"></script>
+	<script src="PowerBall.js"></script>
+    <script src="Menu.js"></script>
+    <script src="Game.js"></script>
+	<script src="Main.js"></script>
+  </body>
+</html>

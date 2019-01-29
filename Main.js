@@ -2,7 +2,7 @@ var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 var inGame = false;
 var sawTutorial = true;
-var menu, game, tutorial;
+var menu, game, tutorial, sounds, score;
 
 init();
 

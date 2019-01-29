@@ -9,7 +9,7 @@ init();
 function init() {
     window.addEventListener('resize', resizeCanvas, false);
     canvas.addEventListener('pointerdown', mouseClicked, false);
-    //canvas.addEventListener('mousedown', mouseClicked, false);
+    canvas.addEventListener('touchstart', mouseClicked, false);
     sounds = [new Audio('./click1.mp3'),new Audio('./wrong.mp3'),new Audio('./Ice.mp3'), new Audio('./Double.mp3')];
     score = localStorage.getItem('score');
     if (score === null) {
